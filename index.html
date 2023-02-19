@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="#">
+  <title>Расчет стоимости автомобиля в лизинг</title>
+</head>
+<body class="page">
+    <section class="calculator">
+        <h1 class="calculator__title">Рассчитайте стоимость автомобиля в лизинг</h1>
+        <div class="calculator__form form">
+            <form action="/" method="POST">
+                <div class="form__grid">
+                    <div class="form__control">
+                        <label class="form__label" for="amountCredit">Стоимость автомобиля</label>
+                        <div class="form__block">
+                            <input id="amountCredit" class="form__input" name="amountCredit"  type="text" value="3300000">
+                            <div class="form__slider"></div>
+                            <span class="form__unit">₽</span>
+                        </div>
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label" for="initialFee">Первоначальный взнос</label>
+                        <div class="form__block">
+                            <input id="initialFee" class="form__input" name="initialFee" type="text" value="420000">
+                            <div id="initFee" class="form__slider"></div>
+                            <span class="form__unit">
+                              <output class="form__percent" id="percent">10</output> %
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label" for="leaseTerm">Срок лизинга</label>
+                        <div class="form__block">
+                            <input id="leaseTerm" class="form__input" name="leaseTerm" type="text" value="60">
+                            <div class="form__slider"></div>
+                            <span class="form__unit">мес.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__grid">
+                    <div class="form__total">
+                        <label class="form__label">Сумма договора лизинга</label>
+                        <output id="sum" class="form__result" name="sum" data-unit="₽">4 467 313</output>
+                    </div>
+                    <div class="form__total">
+                        <label class="form__label">Ежемесячный платеж от</label>
+                        <output id="monthlyPayment" class="form__result" name="monthlyPayment" data-unit="₽">4 467 313</output>
+                    </div>
+                    <button class="form__btn" type="submit">Оставить заявку</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="#"></script>
+</body>
+</html>
