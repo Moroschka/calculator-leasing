@@ -16,7 +16,7 @@
                     <div class="form__control">
                         <label class="form__label" for="amountCredit">Стоимость автомобиля</label>
                         <div class="form__block">
-                            <input id="amountCredit" class="form__input form__input--amount" name="amountCredit"  type="text" value="3300000">
+                            <input id="amountCredit" class="form__input form__input--amount" name="amountCredit"  type="text" value="3300000" data-min="1500000" data-max="10000000">
                             <div class="form__slider form__slider--amount"></div>
                             <span class="form__unit">₽</span>
                         </div>
@@ -24,7 +24,7 @@
                     <div class="form__control">
                         <label class="form__label" for="initialFee">Первоначальный взнос</label>
                         <div class="form__block form__block--initial">
-                            <input id="initialFee" class="form__input form__input--init" name="initialFee" type="text" value="420000">
+                            <input id="initialFee" class="form__input form__input--init" name="initialFee" type="text" value="420000" data-min="330000" data-max="1980000">
                             <div id="initFee" class="form__slider form__slider--init"></div>
                             <span class="form__unit form__unit--mark">
                               <output class="form__percent" id="percent">10</output> %
@@ -34,7 +34,7 @@
                     <div class="form__control">
                         <label class="form__label" for="leaseTerm">Срок лизинга</label>
                         <div class="form__block">
-                            <input id="leaseTerm" class="form__input" name="leaseTerm" type="text" value="60">
+                            <input id="leaseTerm" class="form__input" name="leaseTerm" type="text" value="60" data-min="6" data-max="120">
                             <div class="form__slider"></div>
                             <span class="form__unit">мес.</span>
                         </div>
@@ -54,6 +54,6 @@
             </form>
         </div>
     </section>
-    <script src="#"></script>
+    <script src="build/js/main.min.js"></script>
 </body>
 </html>
